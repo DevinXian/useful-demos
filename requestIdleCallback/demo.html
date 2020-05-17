@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    div {
+      padding: 10px
+    }
+    .button {
+      border: 1px solid green;
+      width: 100px;
+    }
+    #log {
+      height: 800px;
+      background: #eee;
+      overflow-y: scroll;
+    }
+  </style>
+  <body>
+    <p>
+      Demonstration of using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Background_Tasks_API">
+      cooperatively scheduled background tasks</a> using the <code>requestIdleCallback()</code>
+      method.
+    </p>
+
+    <div class="container">
+      <div class="label">Decoding quantum filament tachyon emissions...</div>
+      <progress id="progress" value="0"></progress>
+      <div class="button" id="startButton">
+        Start
+      </div>
+      <div class="label counter">
+        Task <span id="currentTaskNumber">0</span> of <span id="totalTaskCount">0</span>
+      </div>
+    </div>
+
+    <div class="logBox">
+      <div class="logHeader">
+        Log
+      </div>
+      <div id="log">
+      </div>
+    </div>
+
+    <script src="./demo.js"></script>
+  </body>
+</html>

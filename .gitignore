@@ -1,0 +1,11 @@
+dist/
+.temp/
+.rn_temp/
+.tea/
+node_modules/
+.DS_Store
+*-error.log
+.prettierrc
+.vscode
+.vscode/settings.json
+
